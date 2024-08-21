@@ -146,7 +146,7 @@ export default function Home() {
           <div ref={chatLogRef} className="flex-1 overflow-y-auto space-y-6 px-4 md:px-8 lg:px-16">
             {chatLog.map((message, index) => (
               <div key={index} className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-3xl ${message.type === 'user' ? 'text-right' : 'text-left'} bg-white bg-opacity-5 backdrop-blur-sm rounded-lg p-4`}>
+                <div className={`max-w-3xl ${message.type === 'user' ? 'text-right' : 'text-left'}}>
                   <p className="text-xl font-light text-gray-400 leading-relaxed">{message.message}</p>
                   {message.attachments?.map((attachment, i) => (
                     <div key={i} className="mt-2">
