@@ -9,8 +9,6 @@ const TypingAnimation = () => (
   </div>
 );
 
-// ... (previous imports and code remain the same)
-
 const Background = () => {
     const svgRef = useRef(null);
   
